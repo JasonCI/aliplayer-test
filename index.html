@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.2.0/skins/default/aliplayer.css"/>
+<script src="http://g.alicdn.com/de/prismplayer/2.2.0/aliplayer-min.js"></script>
+<body>
+<div id="J_prismPlayer" class="prism-player"></div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var videoUrl = "http://hls.videocc.net/3828390191/3/38283901913ea95224af2bbd9e990ea5_3.m3u8"; //获取的视频地址
+        // 初始化播放器
+        var player = new Aliplayer({
+            id: "J_prismPlayer", // 容器id
+            source: videoUrl,        // 视频url
+            width: "100%",       // 播放器宽度
+            height: "400px"      // 播放器高度
+        });
+    }
+</script>
+</html>
