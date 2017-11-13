@@ -44,16 +44,18 @@
 //        });
 
         var options = {
-//            sourceOrder: true,
-//            sources: [{
-//                src: 'http://hls.videocc.net/e8225e9dbe/e/e8225e9dbe01427c2493d8b53ad7dfff_1.m3u8',
-//                type: "application/x-mpegURL"
-//            }
-//                {
-//                src: '//mpv.videocc.net/3828390191/5/38283901913ea95224af2bbd9e990ea5_1.mp4',
-//                type: 'video/mp4'
-//            }
-//            ],
+            sourceOrder: true,
+            sources: [{
+                src: 'https://hls.videocc.net/e8225e9dbe/e/e8225e9dbe01427c2493d8b53ad7dfff_3.m3u8',
+                type: "application/x-mpegURL"
+            }, {
+                src: 'https://hls.videocc.net/e8225e9dbe/e/e8225e9dbe01427c2493d8b53ad7dfff_2.m3u8',
+                type: "application/x-mpegURL"
+            }, {
+                src: 'https://hls.videocc.net/e8225e9dbe/e/e8225e9dbe01427c2493d8b53ad7dfff_1.m3u8',
+                type: "application/x-mpegURL"
+            }
+            ],
             html5: {
                 hls: {
                     withCredentials: true
